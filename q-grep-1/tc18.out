@@ -1,0 +1,14 @@
+/usr/bin/bazel
+/usr/bin/brltty-prologue.bash
+/usr/bin/byobu-disable-prompt
+/usr/bin/cert2spc
+/usr/bin/electron25
+/usr/bin/env_parallel.bash
+/usr/bin/gtkdocize
+/usr/bin/MagickWand-config
+/usr/bin/mcheck
+/usr/bin/os-prober
+/usr/bin/pnmtoplainpnm
+/usr/bin/runghc-9.0.2
+/usr/bin/update-smart-drivedb
+/usr/bin/vpnc-disconnect

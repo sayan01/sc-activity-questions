@@ -1,0 +1,11 @@
+/usr/bin/bg5latex
+/usr/bin/contextjit
+/usr/bin/genxs
+/usr/bin/libcamerify
+/usr/bin/scsi_readcap
+/usr/bin/VBox
+/usr/bin/wsrep_sst_rsync
+/usr/share/texmf-dist/scripts/pdftex-quiet/pdftex-quiet
+/usr/share/texmf-dist/scripts/pdfxup/pdfxup
+/usr/share/texmf-dist/scripts/texlive-extra/xetex-unsafe.sh
+/usr/share/texmf-dist/scripts/tikztosvg/tikztosvg

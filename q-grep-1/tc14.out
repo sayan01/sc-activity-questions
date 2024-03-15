@@ -1,0 +1,9 @@
+/usr/bin/bg5pdflatex
+/usr/bin/ldd
+/usr/bin/libmcrypt-config
+/usr/bin/nss-config
+/usr/bin/v4l2loopback-ctl
+/usr/bin/wifi-menu
+/usr/bin/xdg-settings
+/usr/bin/zdiff
+/usr/share/texmf-dist/scripts/installfont/installfont-tl

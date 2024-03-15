@@ -1,0 +1,17 @@
+/usr/bin/arm-eos-welcome-installer
+/usr/bin/brltty-setcaps
+/usr/bin/byobu-janitor
+/usr/bin/dvihp
+/usr/bin/gacutil2
+/usr/bin/galera_new_cluster
+/usr/bin/guile-config
+/usr/bin/koi8rxterm
+/usr/bin/libftdi1-config
+/usr/bin/MagickCore-config
+/usr/bin/metabase
+/usr/bin/net-snmp-create-v3-user
+/usr/bin/pcre2-config
+/usr/bin/peverify
+/usr/bin/ppmtomap
+/usr/bin/RunInTerminalEx
+/usr/bin/scp-dbus-service

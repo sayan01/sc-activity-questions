@@ -1,0 +1,12 @@
+/usr/bin/ccrewrite
+/usr/bin/fsck.btrfs
+/usr/bin/i3-sensible-terminal
+/usr/bin/libgcrypt-config
+/usr/bin/libpng16-config-32
+/usr/bin/nspr-config
+/usr/bin/pacman-db-upgrade
+/usr/bin/pdf2ps
+/usr/bin/thorium-shell
+/usr/bin/xdg-screensaver
+/usr/bin/xdg-user-dir
+/usr/share/texmf-dist/scripts/texlive-extra/ps2frag.sh

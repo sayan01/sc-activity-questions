@@ -1,0 +1,10 @@
+/opt/android-studio/bin/studio.sh
+/usr/bin/byobu-quiet
+/usr/bin/embree-vars.sh
+/usr/bin/ghc-pkg-9.0.2
+/usr/bin/mariadbd-safe
+/usr/bin/mdoc-export-html
+/usr/bin/pylupdate6
+/usr/bin/timeshift-launcher
+/usr/bin/wsrep_sst_mysqldump
+/usr/share/texmf-dist/scripts/texlive-extra/pslatex.sh

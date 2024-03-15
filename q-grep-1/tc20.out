@@ -1,0 +1,13 @@
+/usr/bin/atrun
+/usr/bin/certmgr
+/usr/bin/eos-sendlog-helper
+/usr/bin/kmixremote
+/usr/bin/lvm_import_vdo
+/usr/bin/mconfig
+/usr/bin/mono-symbolicate
+/usr/bin/msiexec
+/usr/bin/sqlmetal
+/usr/bin/sqlsharp
+/usr/bin/VBox
+/usr/bin/virt-pki-validate
+/usr/bin/zgrep

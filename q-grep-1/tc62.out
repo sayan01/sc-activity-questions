@@ -1,0 +1,12 @@
+/usr/bin/env_parallel
+/usr/bin/find-debuginfo
+/usr/bin/gzexe
+/usr/bin/krb5-config
+/usr/bin/lodraw
+/usr/bin/mariadb-secure-installation
+/usr/bin/nroff
+/usr/bin/pacdiff
+/usr/bin/python-argcomplete-tcsh
+/usr/bin/xfce4-set-wallpaper
+/usr/share/texmf-dist/scripts/latex2nemeth/latex2nemeth
+/usr/share/texmf-dist/scripts/pagelayout/textestvis
