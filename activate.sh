@@ -40,6 +40,9 @@ qeval() { # Usage: qeval [question | all]
         echo "Output file for test case $tc does not exist"
         continue
       fi
+      if [[ -e ${QDIR}/$question/env.sh ]]; then
+        source "${QDIR}/$question/env.sh"
+      fi
       if diff <("$QDIR/$question"/script.sh < "$f" | col) <(col < "$output"); then
         echo "passed!"
         ((passed++))
@@ -60,6 +63,9 @@ qshow(){ # Usage qshow question
   question=$1
   if [[ $# -eq 0 ]]; then
     question=$(basename "$PWD")
+  fi
+  if [[ ! -d $QDIR/$question && -d $QDIR/q-$question ]]; then
+      question=q-$question
   fi
   if [[ ! -d $QDIR/$question ]]; then
     echo "Question $question does not exist"
@@ -101,6 +107,9 @@ qmake(){ # Usage qmake [question | all ]
     if [[ ! -x $QDIR/$question/script.sh ]]; then
       chmod +x "$QDIR/$question/script.sh"
     fi
+    if [[ -e ${QDIR}/$question/env.sh ]]; then
+      source "${QDIR}/$question/env.sh"
+    fi
     tc=1
     for f in "${QDIR}/$question"/*.in; do
       echo -n "Test Case $tc: "
@@ -140,8 +149,7 @@ qnew(){ # Usage qnew question
     echo "Question already exists, creating new question $question"
   fi
   mkdir -p "$QDIR/$question"
-  touch "$QDIR/$question/README.md"
-  touch "$QDIR/$question/script.sh"
+  touch "$QDIR/$question"/{README.md,script.sh,env.sh}
   chmod +x "$QDIR/$question/script.sh"
   echo "Question $question created"
   cd "$QDIR/$question" || return
@@ -151,6 +159,9 @@ qqedit(){ # Usage qqedit question
   question=$1
   if [[ $# -eq 0 ]]; then
     question=$(basename "$PWD")
+  fi
+  if [[ ! -d $QDIR/$question && -d $QDIR/q-$question ]]; then
+      question=q-$question
   fi
   if [[ ! -d $QDIR/$question ]]; then
     echo "Question $question does not exist"
@@ -170,6 +181,9 @@ qsedit(){ # Usage qsedit question
   question=$1
   if [[ $# -eq 0 ]]; then
     question=$(basename "$PWD")
+  fi
+  if [[ ! -d $QDIR/$question && -d $QDIR/q-$question ]]; then
+      question=q-$question
   fi
   if [[ ! -d $QDIR/$question ]]; then
     echo "Question $question does not exist"
