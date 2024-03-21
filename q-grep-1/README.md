@@ -1,13 +1,39 @@
 # Question
 
-There exists a directory `/usr/bin` which contains a lot of files.
-Some of these executables are shell scripts. Print the path of those
-which are shell scripts.
-To test on multiple test cases, your script should assume that the
-path to the files is given to your script as standard input, one path per line.
-The order of your output should be sorted by the path and file name lexically.
+You are given a markdown file.
+Print all the headings in the file along with two lines after it.
 
-**Hint**: Commands such as `xargs`, `grep`, `sort` and `file` might be useful.
-Read appropriate manual pages
+**Note:** No line of the input data will contain the line '--'
 
-It does not matter if it is a POSIX script or Bourne-again Shell Script
+**Sample Input**
+
+```markdown
+# Heading 1
+
+This is the content of heading 1
+
+## Heading 2
+
+This is the content of heading 2
+
+### Heading 3
+
+This is the content of heading 3
+This is another line
+```
+
+**Sample Output**
+
+```markdown
+# Heading 1
+
+This is the content of heading 1
+
+## Heading 2
+
+This is the content of heading 2
+
+### Heading 3
+
+This is the content of heading 3
+```

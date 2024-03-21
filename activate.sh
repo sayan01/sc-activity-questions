@@ -31,6 +31,7 @@ qeval() { # Usage: qeval [question | all]
       echo "Question $question does not exist"
       return
     fi
+    pushd "$QDIR/$question" || return
     tc=1
     passed=0
     for f in "${QDIR}/$question"/*.in; do
@@ -56,6 +57,7 @@ qeval() { # Usage: qeval [question | all]
     else
       echo "Some test cases failed"
     fi
+    popd || return
   fi
 }
 
