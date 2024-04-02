@@ -1,0 +1,10 @@
+Users:
+---
+Comment: Kernel Overflow User
+Home Directory: /
+---
+Comment: Sayan
+Home Directory: /home/sayan
+---
+Username: demo
+Home Directory: /home/$USER

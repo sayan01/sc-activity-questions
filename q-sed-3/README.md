@@ -14,3 +14,5 @@ The line should contain the symbols `()` and `{`.
 The function definition may contain any number of spaces before or after the symbols.
 The `{` should be the last character on the line, excluding any trailing spaces or tabs.
 The word function can be preceded by any number of spaces or tabs.
+
+Your `script.sh` should use sed commands to accomplish this.
