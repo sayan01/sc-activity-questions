@@ -1,0 +1,14 @@
+# Copyright 2024
+# This programme is part of this
+# libxyz package
+
+def abc(){
+# 5
+    print("This is abc function")
+}
+
+#---
+function xyz(){
+    print("This is xyz function")
+# 10
+}

@@ -1,0 +1,15 @@
+function foo(){
+  echo "hello"
+# this is a comment
+}
+echo "hello2"
+
+foo
+
+  function bar()  {
+  echo "hello3"
+}
+
+function baz() {
+  echo "the quick brown fox jumps over the lazy dog"
+}

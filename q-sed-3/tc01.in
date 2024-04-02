@@ -1,0 +1,10 @@
+# This programme is part of the
+# libxyz package
+
+def abc(){
+    print("This is abc function")
+}
+
+function xyz(){
+    print("This is xyz function")
+}

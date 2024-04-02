@@ -1,0 +1,9 @@
+# Copyright 2024
+#---
+function outer(){
+#---
+  function inner(){
+    console.log('inner');
+  }
+# 5
+}

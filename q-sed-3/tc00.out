@@ -1,0 +1,22 @@
+# Copyright 2024
+#---
+function foo(){
+  echo "hello"
+# this is a comment
+}
+# 5
+echo "hello2"
+
+foo
+
+#---
+  function bar()  {
+# 10
+  echo "hello3"
+}
+
+#---
+function baz() {
+  echo "this quick brown fox jumps over this lazy dog"
+# 15
+}
