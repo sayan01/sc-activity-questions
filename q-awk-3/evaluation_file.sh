@@ -13,7 +13,7 @@ for f in "$test_dir"/*.in; do
     # shellcheck disable=1091
     source "$test_dir/env.sh"
   fi
-  if diff <(awk -f "./script.awk" < "$f" | col) <(col < "$output"); then
+  if diff --color=always <(awk -f "./script.awk" < "$f" | col) <(col < "$output"); then
     echo "passed!"
     ((passed++))
   else

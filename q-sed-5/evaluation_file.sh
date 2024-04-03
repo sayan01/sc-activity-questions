@@ -13,7 +13,7 @@ for f in "$test_dir"/*.in; do
     # shellcheck disable=1091
     source "$test_dir/env.sh"
   fi
-  if diff <(sed -f "./script.sed" < "$f" | col) <(col < "$output"); then
+  if diff --color=always <(sed -f "./script.sed" < "$f" | col) <(col < "$output"); then
     echo "passed!"
     ((passed++))
   else
