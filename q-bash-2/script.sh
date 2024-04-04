@@ -2,7 +2,7 @@
 
 cat > data
 sed -i '/^Age,/d' data
-sort -t, -k3 data -o data
+sort -t, -k3,3 -n data -o data
 mapfile -t heartrates < <(cut -d, -f3 data)
 lines=${#heartrates[@]}
 if [ $((lines % 2)) -eq 0 ]; then
